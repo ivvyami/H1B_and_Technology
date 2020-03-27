@@ -69,7 +69,11 @@ fb_h1b_group = fb_h1b_group.rename(columns={'index': 'Job_Role'})
 #add fb column again. Try to make subset of data for the other tech company sheets
 fb_h1b_group['Place_of_Work'] = 'Facebook' 
 fb_h1b_group.head()
+
+fb_h1b_group.sort_values(by='Job_Count', ascending=False)
+
 #now do the same thing for the other worksheets
+
 
 ####################################################################
 # GOOGLE 
@@ -130,6 +134,7 @@ ggle_h1b_group = ggle_h1b_group.rename(columns={'index': 'Job_Role'})
 ggle_h1b_group['Place_of_Work'] = 'Google' 
 ggle_h1b_group.head()
 
+ggle_h1b_group.sort_values(by='Job_Count', ascending=False)
 
 ####################################################################
 # SALESFORCE
@@ -179,6 +184,7 @@ sf_h1b_group = sf_h1b_group.rename(columns={'index': 'Job_Role'})
 sf_h1b_group['Place_of_Work'] = 'SalesForce' 
 sf_h1b_group.head()
 
+sf_h1b_group.sort_values(by='Job_Count', ascending=False)
 
 ####################################################################
 # WORKDAY 
@@ -228,8 +234,21 @@ wkd_h1b_group = wkd_h1b_group.rename(columns={'index': 'Job_Role'})
 wkd_h1b_group['Place_of_Work'] = 'Workday' 
 wkd_h1b_group.head()
 
+wkd_h1b_group.sort_values(by='Job_Count', ascending=False)
+#######################################################################
+# EXPORT TO WORKBOOKS AND SPREADSHEETS
+drive_dist_df.to_excel(output, sheet_name='All Distances', index=False)
 
 
+fb_output = 'Data/FB_grouped.xlsx'
+ggle_output = 'Data/Ggle_grouped.xlsx'
+sf_output = 'Data/SF_grouped.xlsx'
+wkd_output = 'Data/Wkd_grouped.xlsx'
+
+fb_h1b_group.to_excel(fb_output, sheet_name = 'Data', index = False)
+ggle_h1b_group.to_excel(ggle_output, sheet_name = 'Data', index = False)
+sf_h1b_group.to_excel(sf_output, sheet_name = 'Data', index = False)
+wkd_h1b_group.to_excel(wkd_output, sheet_name = 'Data', index = False)
 
 
 
