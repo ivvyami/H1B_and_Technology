@@ -237,18 +237,20 @@ wkd_h1b_group.head()
 wkd_h1b_group.sort_values(by='Job_Count', ascending=False)
 #######################################################################
 # EXPORT TO WORKBOOKS AND SPREADSHEETS
-drive_dist_df.to_excel(output, sheet_name='All Distances', index=False)
 
+# fb_output = 'Data/FB_grouped.xlsx'
+# ggle_output = 'Data/Ggle_grouped.xlsx'
+# sf_output = 'Data/SF_grouped.xlsx'
+# wkd_output = 'Data/Wkd_grouped.xlsx'
 
-fb_output = 'Data/FB_grouped.xlsx'
-ggle_output = 'Data/Ggle_grouped.xlsx'
-sf_output = 'Data/SF_grouped.xlsx'
-wkd_output = 'Data/Wkd_grouped.xlsx'
+# fb_h1b_group.to_excel(fb_output, sheet_name = 'Data', index = False)
+# ggle_h1b_group.to_excel(ggle_output, sheet_name = 'Data', index = False)
+# sf_h1b_group.to_excel(sf_output, sheet_name = 'Data', index = False)
+# wkd_h1b_group.to_excel(wkd_output, sheet_name = 'Data', index = False)
 
-fb_h1b_group.to_excel(fb_output, sheet_name = 'Data', index = False)
-ggle_h1b_group.to_excel(ggle_output, sheet_name = 'Data', index = False)
-sf_h1b_group.to_excel(sf_output, sheet_name = 'Data', index = False)
-wkd_h1b_group.to_excel(wkd_output, sheet_name = 'Data', index = False)
+#########################################################################################
+# FACEBOOK WS
+#########################################################################################
 
 
 
