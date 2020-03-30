@@ -249,8 +249,30 @@ wkd_h1b_group.sort_values(by='Job_Count', ascending=False)
 # wkd_h1b_group.to_excel(wkd_output, sheet_name = 'Data', index = False)
 
 #########################################################################################
-# FACEBOOK WS
+# 2015 - 2019 H1B Employer Data
 #########################################################################################
+h1b_15 = pd.read_csv('Data/h1b_datahubexport-2015.csv')
+h1b_16 = pd.read_csv('Data/h1b_datahubexport-2016.csv')
+h1b_17 = pd.read_csv('Data/h1b_datahubexport-2017.csv')
+h1b_18 = pd.read_csv('Data/h1b_datahubexport-2018.csv')
+h1b_19 = pd.read_csv('Data/h1b_datahubexport-2019.csv')
+
+h1b_15.head()
+h1b_15.dtypes
+
+#make Zip, Tax ID, and NAICS Code into text for all dataframes 
+h1b_15[["ZIP", "Tax ID", "NAICS"]] = h1b_15[["ZIP", "Tax ID", "NAICS"]].astype(str)
+h1b_16[["ZIP", "Tax ID", "NAICS"]] = h1b_16[["ZIP", "Tax ID", "NAICS"]].astype(str)
+h1b_17[["ZIP", "Tax ID", "NAICS"]] = h1b_17[["ZIP", "Tax ID", "NAICS"]].astype(str)
+h1b_18[["ZIP", "Tax ID", "NAICS"]] = h1b_18[["ZIP", "Tax ID", "NAICS"]].astype(str)
+h1b_19[["ZIP", "Tax ID", "NAICS"]] = h1b_19[["ZIP", "Tax ID", "NAICS"]].astype(str)
+
+
+
+
+
+
+
 
 
 
