@@ -1,6 +1,6 @@
 # H-1B and Technology
 
-For this project, I wanted to look at the changes in approvals, denials, and RFE's for H-1B visas have changed since 2015, how this has affected Tech Companies, and the possible roadblocks companies may face when trying to sponsor someone to fill a specialized position.
+For this project, I wanted to look at the changes in approvals, denials, and RFE's for H-1B visas how they have changed since 2015, how this has affected Tech Companies, and the possible roadblocks companies may face when trying to sponsor someone to fill a specialized position.
 
 ### Problem Statement
 Denials of H-1B Visas has resulted in the inability to fulfill the demand of tech jobs (jobs in tech). Using tech training companies as a bridge with potential tech career minded individuals could help fill those jobs. 
