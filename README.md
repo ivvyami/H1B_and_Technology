@@ -10,7 +10,6 @@ Denials of H-1B Visas has resulted in the inability to fulfill the demand of tec
 - U.S. Bureau of Labor Statistics (BLS): https://www.bls.gov/
 - Kaggle: https://www.kaggle.com/
 - O*Net Online: https://www.onetonline.org/
-- Business Insider: https://www.businessinsider.com/
 
 ### Tools Used
 - Python
@@ -25,4 +24,3 @@ https://app.powerbi.com/view?r=eyJrIjoiMTljMGMxNjktMjVmOC00MGMyLWJiZTEtYjgyNmNmN
 
 ##### Contact Info
 - isoto@talentpath.com
-- Github Link: https://github.com/ivvyami/H1B_and_Technology.git
