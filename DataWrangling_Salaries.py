@@ -248,10 +248,6 @@ wkd_h1b_group.sort_values(by='Job_Count', ascending=False)
 # sf_h1b_group.to_excel(sf_output, sheet_name = 'Data', index = False)
 # wkd_h1b_group.to_excel(wkd_output, sheet_name = 'Data', index = False)
 
-#########################################################################################
-# FB, Google, and WORKDAY Data H1B Employer Data
-#########################################################################################
-
 
 
 
